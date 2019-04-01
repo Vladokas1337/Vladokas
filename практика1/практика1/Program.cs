@@ -4,9 +4,8 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace практика1
+namespace ConsoleApp2
 {
-
     class Program
     {
         private static void Main(string[] args)
@@ -23,7 +22,7 @@ namespace практика1
                 {
 
                     case 2:
-                        examen lol = new examen();
+                        Examen lol = new Examen();
                         lol.GetInfo();
                         break;
                     case 0:
@@ -33,51 +32,5 @@ namespace практика1
             }
             Console.ReadKey();
         }
-
-        class examen
-        {
-            public string name { get; set; }
-            public float coll { get; set; }
-            public double ozz { get; set; }
-
-            //Конструктор с параметрами
-            public examen(string firm, float adr, double god)
-            {
-                name = firm;
-                coll = adr;
-                ozz = god;
-            }
-
-            public examen()
-            {
-                name = null;
-                coll = 0;
-                ozz = 0;
-
-                SetInfo();
-            }
-
-
-            public void SetInfo()
-            {
-                Console.WriteLine("Введите название:");
-                name = Console.ReadLine();
-
-                Console.WriteLine("введите калибр:");
-                coll = float.Parse(Console.ReadLine());
-
-                Console.WriteLine("введите дальность");
-                ozz = Int32.Parse(Console.ReadLine());
-            }
-
-            public void GetInfo()
-            {
-                Console.WriteLine($"название: {name}");
-                Console.WriteLine($"калибр: {coll}");
-                Console.WriteLine($"дальность : {ozz}");
-            }
-        }
     }
 }
-
-
