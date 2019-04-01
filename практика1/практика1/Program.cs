@@ -6,11 +6,4 @@ using System.Threading.Tasks;
 
 namespace практика1
 {
-    class Program
-    {
-        static void Main(string[] args)
-        {
-            Console.WriteLine("GIT");
-        }
-    }
-}
+ 
